@@ -1,6 +1,6 @@
 <h1 align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=4000&pause=1000&color=70A5FD&center=true&vCenter=true&multiline=true&width=700&height=100&lines=Hey+%F0%9F%91%8B+I'm+Rafa!;Leader+by+day+%7C+Builder+%26+coder+by+night" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=4000&pause=1000&color=70A5FD&center=true&vCenter=true&multiline=true&width=700&height=100&lines=Hey+%F0%9F%91%8B+I'm+Rafa!;Hunter+by+day+%7C+Builder+%26+coder+by+night" alt="Typing SVG" />
   </a>
 </h1>
 
@@ -17,7 +17,6 @@
 ```yaml
 name: Rafael Borges
 location: São Paulo, Brazil
-role: Regional VP / Director
 passions:
   - Writing code across many languages
   - Home Automation & IoT
