@@ -30,6 +30,22 @@ jobs:
           path: profile/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Generate pin card - scoop-galaxy-integrations
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=scoop-galaxy-integrations&theme=tokyonight&hide_border=true
+          path: profile/pin-scoop-galaxy-integrations.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate pin card - scoop-emulators
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=scoop-emulators&theme=tokyonight&hide_border=true
+          path: profile/pin-scoop-emulators.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Generate streak stats
         run: |
           curl -o profile/streak.svg "https://streak-stats.demolab.com/?user=${{ github.repository_owner }}&theme=tokyonight&hide_border=true"

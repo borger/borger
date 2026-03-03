@@ -58,10 +58,10 @@ fun_fact: Graduated musician who found a second calling in tech
 
 <p align="center">
   <a href="https://github.com/borger/scoop-galaxy-integrations">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=borger&repo=scoop-galaxy-integrations&theme=tokyonight&hide_border=true" />
+    <img src="./profile/pin-scoop-galaxy-integrations.svg" />
   </a>
   <a href="https://github.com/borger/scoop-emulators">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=borger&repo=scoop-emulators&theme=tokyonight&hide_border=true" />
+    <img src="./profile/pin-scoop-emulators.svg" />
   </a>
 </p>
 
