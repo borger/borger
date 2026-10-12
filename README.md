@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=borger&style=flat-square&color=70A5FD" alt="Profile views"/>
+  <img src="https://hits.sh/github.com/borger.svg?style=flat-square&color=70a5fd&label=profile%20views&labelColor=1a1b27" alt="Profile views"/>
 </p>
 
 ---
