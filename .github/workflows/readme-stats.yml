@@ -10,49 +10,77 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    env:
+      # PAT with read:user scope; falls back to the workflow token if unset
+      STATS_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
 
     steps:
       - uses: actions/checkout@v4
 
+      # Each card step may fail on its own: the last good SVG stays in place,
+      # the others still get committed, and the final step fails the run.
+
       - name: Generate stats card
-        uses: readme-tools/github-readme-stats-action@v1
+        id: stats
+        continue-on-error: true
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2.1.0
         with:
           card: stats
           options: username=${{ github.repository_owner }}&show_icons=true&theme=tokyonight&include_all_commits=true&hide_border=true
           path: profile/stats.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ env.STATS_TOKEN }}
+          fail_on_error: true
 
       - name: Generate top languages card
-        uses: readme-tools/github-readme-stats-action@v1
+        id: top_langs
+        continue-on-error: true
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2.1.0
         with:
           card: top-langs
           options: username=${{ github.repository_owner }}&layout=compact&theme=tokyonight&hide_border=true&langs_count=10
           path: profile/top-langs.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ env.STATS_TOKEN }}
+          fail_on_error: true
 
       - name: Generate pin card - scoop-galaxy-integrations
-        uses: readme-tools/github-readme-stats-action@v1
+        id: pin_galaxy
+        continue-on-error: true
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2.1.0
         with:
           card: pin
           options: username=${{ github.repository_owner }}&repo=scoop-galaxy-integrations&theme=tokyonight&hide_border=true
           path: profile/pin-scoop-galaxy-integrations.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ env.STATS_TOKEN }}
+          fail_on_error: true
 
       - name: Generate pin card - scoop-emulators
-        uses: readme-tools/github-readme-stats-action@v1
+        id: pin_emulators
+        continue-on-error: true
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2.1.0
         with:
           card: pin
           options: username=${{ github.repository_owner }}&repo=scoop-emulators&theme=tokyonight&hide_border=true
           path: profile/pin-scoop-emulators.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ env.STATS_TOKEN }}
+          fail_on_error: true
 
       - name: Generate streak stats
+        id: streak
+        continue-on-error: true
         run: |
-          curl -o profile/streak.svg "https://streak-stats.demolab.com/?user=${{ github.repository_owner }}&theme=tokyonight&hide_border=true"
+          curl -fsSL -o /tmp/streak.svg "https://streak-stats.demolab.com/?user=${{ github.repository_owner }}&theme=tokyonight&hide_border=true"
+          grep -q '<svg' /tmp/streak.svg
+          mv /tmp/streak.svg profile/streak.svg
 
       - name: Generate activity graph
-        run: |
-          curl -o profile/activity-graph.svg "https://github-readme-activity-graph.vercel.app/graph?username=${{ github.repository_owner }}&theme=tokyo-night&hide_border=true&area=true"
+        id: activity
+        continue-on-error: true
+        uses: maurodesouza/github-readme-activity-graph-action@6411849745757299611a795fef822a31ca8d1d02 # v1.0.0
+        with:
+          username: ${{ github.repository_owner }}
+          options: theme=tokyo-night&hide_border=true&area=true
+          output_path: profile/activity-graph.svg
+          token: ${{ env.STATS_TOKEN }}
 
       - name: Commit cards
         run: |
@@ -62,3 +90,9 @@ jobs:
           git commit -m "chore: update README cards" || exit 0
           git pull --rebase
           git push
+
+      - name: Fail if any card failed
+        if: contains(join(steps.*.outcome, ','), 'failure')
+        run: |
+          echo "One or more cards failed to generate; check the steps above."
+          exit 1

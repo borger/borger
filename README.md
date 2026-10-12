@@ -5,9 +5,21 @@
 </h1>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/rafaelborks/"><img src="https://img.shields.io/badge/-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <a href="https://x.com/rafaelborks"><img src="https://img.shields.io/badge/-X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X"/></a>
-  <img src="https://komarev.com/ghpvc/?username=borger&style=for-the-badge&color=70A5FD" alt="Profile views"/>
+  <a href="https://rafaelborges.me"><img src="https://img.shields.io/badge/rafaelborges.me-all%20my%20links-70A5FD?style=for-the-badge&labelColor=1A1B27" alt="rafaelborges.me"/></a>
+</p>
+
+<p align="center">
+  <a href="https://linkedin.com/in/rafaelborks"><img src="https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsPSJ3aGl0ZSIgZD0iTTIwLjQ0NyAyMC40NTJoLTMuNTU0di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzctMS44NTItMy4wMzctMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2N0g5LjM1MVY5aDMuNDE0djEuNTYxaC4wNDZjLjQ3Ny0uOSAxLjYzNy0xLjg1IDMuMzctMS44NSAzLjYwMSAwIDQuMjY3IDIuMzcgNC4yNjcgNS40NTV2Ni4yODZ6TTUuMzM3IDcuNDMzYy0xLjE0NCAwLTIuMDYzLS45MjYtMi4wNjMtMi4wNjUgMC0xLjEzOC45Mi0yLjA2MyAyLjA2My0yLjA2MyAxLjE0IDAgMi4wNjQuOTI1IDIuMDY0IDIuMDYzIDAgMS4xMzktLjkyNSAyLjA2NS0yLjA2NCAyLjA2NXptMS43ODIgMTMuMDE5SDMuNTU1VjloMy41NjR2MTEuNDUyek0yMi4yMjUgMEgxLjc3MUMuNzkyIDAgMCAuNzc0IDAgMS43Mjl2MjAuNTQyQzAgMjMuMjI3Ljc5MiAyNCAxLjc3MSAyNGgyMC40NTFDMjMuMiAyNCAyNCAyMy4yMjcgMjQgMjIuMjcxVjEuNzI5QzI0IC43NzQgMjMuMiAwIDIyLjIyMiAwaC4wMDN6Ii8+PC9zdmc+" alt="LinkedIn"/></a>
+  <a href="https://x.com/rafaelborks"><img src="https://img.shields.io/badge/-X-000000?style=flat-square&logo=x&logoColor=white" alt="X"/></a>
+  <a href="https://bsky.app/profile/rafaelborks.bsky.social"><img src="https://img.shields.io/badge/-Bluesky-0285FF?style=flat-square&logo=bluesky&logoColor=white" alt="Bluesky"/></a>
+  <a href="https://www.youtube.com/channel/UCgHz6BF6eCuCQX6A16cfuqQ"><img src="https://img.shields.io/badge/-YouTube-FF0000?style=flat-square&logo=youtube&logoColor=white" alt="YouTube"/></a>
+  <a href="https://www.twitch.tv/rafaelborks/"><img src="https://img.shields.io/badge/-Twitch-9146FF?style=flat-square&logo=twitch&logoColor=white" alt="Twitch"/></a>
+  <a href="https://open.spotify.com/artist/7mOtRxdMDJhC29aWwTYw1Z"><img src="https://img.shields.io/badge/-Spotify-1DB954?style=flat-square&logo=spotify&logoColor=white" alt="Spotify"/></a>
+  <a href="https://gitlab.com/lordr"><img src="https://img.shields.io/badge/-GitLab-FC6D26?style=flat-square&logo=gitlab&logoColor=white" alt="GitLab"/></a>
+</p>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=borger&style=flat-square&color=70A5FD" alt="Profile views"/>
 </p>
 
 ---
