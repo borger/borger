@@ -8,8 +8,8 @@
         role="img"
         aria-labelledby="descId"
       >
-        <title id="titleId">Rafael Borges' GitHub Stats, Rank: A-</title>
-        <desc id="descId">Total Stars Earned: 222, Total Commits  : 5189, Total PRs: 75, Total Issues: 18, Contributed to (last year): 2</desc>
+        <title id="titleId">Rafael Borges&#39; GitHub Stats, Rank: A-</title>
+        <desc id="descId">Total Stars Earned: 227, Total Commits  : 5217, Total PRs: 78, Total Issues: 18, Contributed to (last year): 2</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,11 +73,12 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 79.40293565716253;
+        stroke-dashoffset: 77.76163101853378;
       }
     }
   
   
+          
 
           
       /* Animations */
@@ -102,9 +103,15 @@
         </style>
 
         
+        <defs>
+          
+          
+        </defs>
+        
 
         <rect
           data-testid="card-bg"
+          class="card-bg"
           x="0.5"
           y="0.5"
           rx="4.5"
@@ -126,7 +133,7 @@
         y="0"
         class="header"
         data-testid="header"
-      >Rafael Borges' GitHub Stats</text>
+      >Rafael Borges&#39; GitHub Stats</text>
     </g>
       </g>
     
@@ -159,10 +166,10 @@
       <text class="stat  bold" x="25" y="12.5">Total Stars Earned:</text>
       <text
         class="stat  bold"
-        x="219.01"
+        x="224.01"
         y="12.5"
         data-testid="stars"
-      >222</text>
+      >227</text>
     </g>
   </g><g transform="translate(0, 25)">
     <g class="stagger" style="animation-delay: 600ms" transform="translate(25, 0)">
@@ -174,7 +181,7 @@
       <text class="stat  bold" x="25" y="12.5">Total Commits:</text>
       <text
         class="stat  bold"
-        x="219.01"
+        x="224.01"
         y="12.5"
         data-testid="commits"
       >5.2k</text>
@@ -189,10 +196,10 @@
       <text class="stat  bold" x="25" y="12.5">Total PRs:</text>
       <text
         class="stat  bold"
-        x="219.01"
+        x="224.01"
         y="12.5"
         data-testid="prs"
-      >75</text>
+      >78</text>
     </g>
   </g><g transform="translate(0, 75)">
     <g class="stagger" style="animation-delay: 900ms" transform="translate(25, 0)">
@@ -204,7 +211,7 @@
       <text class="stat  bold" x="25" y="12.5">Total Issues:</text>
       <text
         class="stat  bold"
-        x="219.01"
+        x="224.01"
         y="12.5"
         data-testid="issues"
       >18</text>
@@ -219,7 +226,7 @@
       <text class="stat  bold" x="25" y="12.5">Contributed to (last year):</text>
       <text
         class="stat  bold"
-        x="219.01"
+        x="224.01"
         y="12.5"
         data-testid="contribs"
       >2</text>
